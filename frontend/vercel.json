@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/uploads/:path*",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "/realtime-twitter-subscription/frontend/assets/:path*"
+    },
+    {
+      "source": "/:lang.json",
+      "destination": "/realtime-twitter-subscription/frontend/:lang.json"
+    },
+    {
+      "source": "/((?!api|uploads|assets|.*\\.json).*)$",
+      "destination": "/realtime-twitter-subscription/frontend/index.html"
+    }
+  ]
+}
