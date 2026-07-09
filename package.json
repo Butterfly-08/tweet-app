@@ -4,6 +4,7 @@
   "private": true,
   "description": "Root configuration for Vercel deployment",
   "scripts": {
+    "build": "echo 'No build step required'",
     "start": "node backend/server.js",
     "dev": "nodemon backend/server.js"
   },
